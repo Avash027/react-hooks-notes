@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import UseState from "./Hooks/UseState";
+import UseStateObj from "./Hooks/UseStateObj";
+import UseStatePrevState from "./Hooks/UseStatePrevState";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseState></UseState>
+      <br />
+      <br />
+      <br />
+      <br />
+      <UseStatePrevState></UseStatePrevState>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <UseStateObj />
     </div>
   );
 }
