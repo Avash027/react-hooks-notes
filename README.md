@@ -12,7 +12,7 @@ This repo contains all the implemenations of react hooks
 - When we use useEffect without second argument it calls the funtion everytime a component updates
   It is similar to componentDidUpdate
 
-```js
+```jsx
 useEffect(() => {
   document.title = `Count = ${count}`;
 });
@@ -21,7 +21,7 @@ useEffect(() => {
 - When the variables in the array updates then only the below useEffect runs
   It is similar to conditional componentDidUpdate
 
-```js
+```jsx
 useEffect(() => {
   document.title = `Count = ${count}`;
 }, [count]);
@@ -29,7 +29,7 @@ useEffect(() => {
 
 - When we give empty array then it acts as componenetDidMount and it will run only once
 
-```js
+```jsx
 useEffect(() => {
   console.log("Run only once");
 }, []);
@@ -38,7 +38,7 @@ useEffect(() => {
 - To make cleanup function to cancel all listners we can return a function and have the clean up code
   It is same as componentDidUnmount
 
-```js
+```jsx
 useEffect(() => {
   document.title = `Count = ${count}`;
 
@@ -46,4 +46,30 @@ useEffect(() => {
     //Your clean up code here
   };
 }, [count]);
+```
+
+## useContext
+
+Eg of how to create context
+
+```jsx
+export const UserContext = React.createContext();
+```
+
+```jsx
+<UserContext.Provider value={"Avash"}>
+  <UseContext></UseContext>
+</UserContext.Provider>
+```
+
+This is where we want to use the context info
+
+```jsx
+import { context_name } from "../../App";
+```
+
+and then inside function
+
+```jsx
+const variable = useContext(context_name);
 ```
