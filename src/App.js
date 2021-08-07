@@ -1,11 +1,12 @@
-import UseState from "./Hooks/UseState";
-import UseStateObj from "./Hooks/UseStateObj";
-import UseStatePrevState from "./Hooks/UseStatePrevState";
+// import UseState from "./Hooks/UseState";
+// import UseStateObj from "./Hooks/UseStateObj";
+// import UseStatePrevState from "./Hooks/UseStatePrevState";
+import UseEffetRender from "./Hooks/UseEffetRender";
 
 function App() {
   return (
     <div className="App">
-      <UseState></UseState>
+      {/* <UseState></UseState>
       <br />
       <br />
       <br />
@@ -17,7 +18,9 @@ function App() {
       <br />
       <br />
 
-      <UseStateObj />
+      <UseStateObj /> */}
+
+      <UseEffetRender />
     </div>
   );
 }
