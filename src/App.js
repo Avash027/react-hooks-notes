@@ -1,10 +1,11 @@
 import React from "react";
+import Reducertwo from "./Hooks/Reducer/Reducertwo";
 
 // import UseState from "./Hooks/UseState";
 // import UseStateObj from "./Hooks/UseStateObj";
 // import UseStatePrevState from "./Hooks/UseStatePrevState";
 // import UseEffetRender from "./Hooks/UseEffetRender";
-import UseContext from "./Hooks/context/UseContext";
+// import UseContext from "./Hooks/context/UseContext";
 
 export const UserContext = React.createContext();
 
@@ -27,9 +28,11 @@ function App() {
 
       {/* <UseEffetRender /> */}
 
-      <UserContext.Provider value={"Avash"}>
+      {/* <UserContext.Provider value={"Avash"}>
         <UseContext></UseContext>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      <Reducertwo></Reducertwo>
     </div>
   );
 }

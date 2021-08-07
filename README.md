@@ -73,3 +73,28 @@ and then inside function
 ```jsx
 const variable = useContext(context_name);
 ```
+
+## useReducer
+
+- Its used for state management
+- useState is built using useReducer
+
+```jsx
+const reducerFunction = (currentState, action) => {
+  // code
+  return newState;
+};
+
+const [newState, dispatch] = useReducer(reducerFunction, initialState);
+
+//To call a reducer use
+
+dispatch(action_type);
+```
+
+| Scenario                    | useState                 | useReducer       |
+| --------------------------- | ------------------------ | ---------------- |
+| Type of state               | Number,string or boolean | Object and array |
+| Number of state transitions | One or two               | Too many         |
+| Related state transitions   | no                       | yes              |
+| Local vs global             | Local                    | Global           |
